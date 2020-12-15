@@ -24,6 +24,21 @@ public class Employee {
         this.name = name;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public Car getCar() {
+        return car;
+    }
 
     public void setCity(String city) {
         this.city = city;
