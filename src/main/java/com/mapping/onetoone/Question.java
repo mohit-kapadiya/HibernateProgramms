@@ -21,4 +21,12 @@ public class Question {
     public void setAnswer(Answer answer) {
         this.answer = answer;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
 }
