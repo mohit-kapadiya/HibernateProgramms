@@ -1,5 +1,6 @@
 package com.mapping.onetomany;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -10,7 +11,7 @@ public class Question1 {
     @Id
     private int id;
     private String question;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Answer1> answer1List;
 
     public void setId(int id) {
