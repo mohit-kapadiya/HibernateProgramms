@@ -9,7 +9,6 @@ import org.hibernate.query.NativeQuery;
 import java.util.Arrays;
 import java.util.List;
 
-
 public class SqlExample {
     public static final Logger logger = Logger.getLogger(SqlExample.class);
     public static void main(String[] args) {
@@ -20,7 +19,6 @@ public class SqlExample {
         for(Object[] objects:list){
             logger.info(Arrays.toString(objects));
         }
-
         session.close();
         sessionFactory.close();
     }
